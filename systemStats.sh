@@ -1,7 +1,7 @@
 #! /usr/bin/
 # CREATED BY: Andrew Dean
 # Date created: 5/Oct/2021
-# Version: V0.1
+# Version: V0.2
 
 # This script is designed to gather system statistics
 AUTHOR="Andrew Dean"
