@@ -1,12 +1,12 @@
 #! /usr/bin/
 # CREATED BY: Andrew Dean
-# Date created: 19/Oct/2021
-# Version: V0.3
+# Date created: 16/Nov/2021
+# Version: V0.4
 
 # This script is designed to gather system statistics
 AUTHOR="Andrew Dean"
-VERSION="V0.3"
-RELEASED="2021-10-19"
+VERSION="V0.4"
+RELEASED="2021-11-16"
 FILE=~/ACE/systemstats.log
 # Display a help message
 
@@ -47,7 +47,7 @@ c) USAGE=$(grep -w 'cpu' /proc/stat | awk '{usage=($2+$3+$4+$6+$7+$8)*100/($2+$3
    echo ${USAGE};;
 t) TEMP=$(cat /sys/class/thermal/thermal_zone0/temp)
    echo ${TEMP} "Need to divide by 1000 to get degC.";;
-v) echo -e "systemStats:\n\t Version: ${VERSION} Released on: ${RLEASED} Created by: ${AUTHOR}";;
+v) echo -e "systemStats:\n\t Version: ${VERSION} Released on: ${RELEASED} Created by: ${AUTHOR}";;
 esac
 done
 
