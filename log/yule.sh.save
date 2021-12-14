@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Created by: Andrew Dean
+#Date created: 14th Dec '21
+#Description: Shell script for rotating log files
+
+LOGPATH="~/ACE/log/yule.log"
+
+logger()
+{
+	LOGTIME=$(date "+%FT%R%SZ") # ISO 8601 STANDARD
+	echo "[ ${LOGTIME} ]" >> ${LOGPATH}
+}
+
+cd log
+logger
